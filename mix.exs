@@ -12,7 +12,7 @@ defmodule LinkPreview.Mixfile do
       docs: [
         extras: ["README.md", "CHANGELOG.md"]
       ],
-      elixir: "~> 1.6",
+      elixir: "~> 1.10",
       elixirc_paths: elixirc_paths(Mix.env()),
       homepage_url: "https://appunite.com",
       name: "Link Preview",
@@ -63,8 +63,8 @@ defmodule LinkPreview.Mixfile do
   defp deps do
     [
       # required
-      {:floki, "~> 0.21"},
-      {:tesla, "~> 1.2"},
+      {:floki, ">= 0.30.0"},
+      {:tesla, "~> 1.3"},
 
       # optional
       {:html_entities, "~> 0.4", optional: true},
